@@ -4,4 +4,4 @@ A quick Dockerfile 'borrowed' from [ROPNOP](https://blog.ropnop.com/docker-for-p
 
 Usage: 
 
-```docker run --rm -it -p 80:80 -p 443:443 -p "{$PWD}:/srv/data smarticus/serve_http"```
+```docker run --rm -it -p 80:80 -p 443:443 -v "${PWD}:/srv/data" smarticus/serve_http```
